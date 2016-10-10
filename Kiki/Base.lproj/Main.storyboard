@@ -16,50 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_2836" translatesAutoresizingMaskIntoConstraints="NO" id="kG2-31-WS3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-kG-HGZ">
+                                <rect key="frame" x="0.0" y="569" width="375" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-9U-4cA">
+                                        <rect key="frame" x="14" y="21" width="73" height="55"/>
+                                        <state key="normal" title="Button" image="IMG_2838"/>
+                                        <connections>
+                                            <action selector="recordStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyl-Wq-HE2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.61330950818482588" blue="0.3990331981539329" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="recordImage" destination="Sjy-9U-4cA" id="acP-2M-q06"/>
+                        <outlet property="viewImage" destination="MIq-kG-HGZ" id="bW0-4o-2vH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="bnN-io-LHw">
-            <objects>
-                <viewController id="9pD-Zl-e3c" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vpz-LJ-Mdx"/>
-                        <viewControllerLayoutGuide type="bottom" id="0Yp-RS-zE9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mhQ-fJ-jmg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VlT-tw-95N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="859.5" y="399.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="20s-sY-F5P">
-            <objects>
-                <viewController id="cRO-EY-bzV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dSV-r4-RnV"/>
-                        <viewControllerLayoutGuide type="bottom" id="VBN-rq-mi0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="T02-rL-3c2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4I4-DA-LHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1252.5" y="399.5"/>
+            <point key="canvasLocation" x="448.5" y="399.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_2836" width="750" height="1334"/>
+        <image name="IMG_2838" width="450" height="468"/>
+    </resources>
 </document>
