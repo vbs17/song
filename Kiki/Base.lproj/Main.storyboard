@@ -23,15 +23,21 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-kG-HGZ">
                                 <rect key="frame" x="0.0" y="569" width="375" height="98"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-9U-4cA">
-                                        <rect key="frame" x="14" y="21" width="73" height="55"/>
-                                        <state key="normal" title="Button" image="IMG_2838"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-9U-4cA">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="102"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                        <state key="normal" title="Button" image="Kiki4"/>
                                         <connections>
                                             <action selector="recordStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyl-Wq-HE2"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.61330950818482588" blue="0.3990331981539329" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.14156763954813509" green="0.25016361256544506" blue="0.056587610852417834" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdq-Fl-du2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <color key="backgroundColor" red="0.1346355925389893" green="0.36426292539267013" blue="0.10591400238059603" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.695455661" green="0.55169829479999999" blue="0.16816361639999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -44,11 +50,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5" y="399.5"/>
+            <point key="canvasLocation" x="354.5" y="402.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="IMG_2836" width="750" height="1334"/>
-        <image name="IMG_2838" width="450" height="468"/>
+        <image name="Kiki4" width="1440" height="775"/>
     </resources>
 </document>
