@@ -24,9 +24,9 @@
                                 <rect key="frame" x="0.0" y="569" width="375" height="98"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-9U-4cA">
-                                        <rect key="frame" x="0.0" y="0.0" width="104" height="102"/>
+                                        <rect key="frame" x="8" y="4" width="104" height="90"/>
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" title="Button" image="Kiki4"/>
+                                        <state key="normal" title="Button" image="kiki"/>
                                         <connections>
                                             <action selector="recordStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyl-Wq-HE2"/>
                                         </connections>
@@ -39,11 +39,21 @@
                                 <color key="backgroundColor" red="0.1346355925389893" green="0.36426292539267013" blue="0.10591400238059603" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.695455661" green="0.55169829479999999" blue="0.16816361639999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-KZ-Ujd">
+                                <rect key="frame" x="0.0" y="49" width="375" height="521"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Khh-KZ-Ujd" secondAttribute="trailing" id="7qp-6s-r2k"/>
+                            <constraint firstItem="Khh-KZ-Ujd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="hcv-2f-gFm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Khh-KZ-Ujd" secondAttribute="bottom" constant="97" id="jaY-fV-twg"/>
+                            <constraint firstItem="Khh-KZ-Ujd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ra5-wu-xcj"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="imageView" destination="Khh-KZ-Ujd" id="mmU-3Q-WNS"/>
                         <outlet property="recordImage" destination="Sjy-9U-4cA" id="acP-2M-q06"/>
                         <outlet property="viewImage" destination="MIq-kG-HGZ" id="bW0-4o-2vH"/>
                     </connections>
@@ -55,6 +65,6 @@
     </scenes>
     <resources>
         <image name="IMG_2836" width="750" height="1334"/>
-        <image name="Kiki4" width="1440" height="775"/>
+        <image name="kiki" width="181" height="177"/>
     </resources>
 </document>

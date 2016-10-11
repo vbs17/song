@@ -9,38 +9,60 @@ class ViewController: UIViewController {
     let fileManager = NSFileManager()//録音もできないしそれを再生もできない
     var audioRecorder: AVAudioRecorder?
     let fileName = "sample.caf"
-    var time: NSTimer!
-    let recordDelay = 3.0
-    
-    
-    let image1 = UIImage(named: "IMG_2522")
-    let image2 = UIImage(named: "IMG_2844")
-    let image3 = UIImage(named: "IMG_2846")
+    var timer: NSTimer!
+    let photos = ["Kiki10", "Kiki7", "Kiki8","IMG_1718"]
+    var count = 1
     
     
     
-    @IBOutlet weak var viewImage: UIView! //オレンジ色
-    @IBOutlet weak var recordImage: UIButton! //丸いレコーディングボタン
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var viewImage: UIView!
+    @IBOutlet weak var recordImage: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.setupAudioRecorder()
+        self.setupAudioRecorder()
     }
     
     //カウントダウンしてレコード開始しボタンのUIも変更
     @IBAction func recordStart(sender: UIButton) {
-        sender.setImage(UIImage(named: "Kiki5"), forState: UIControlState.Normal)
-    
-    }
-    
-    func imageiti() {
-        let view1: UIImageView = UIImageView(frame: CGRectMake(0,0,300,300))
-        image1.size = view1
-        
-        
-        
+        sender.setImage(UIImage(named: "Kiki11"), forState: UIControlState.Normal)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.nextPage), userInfo: nil, repeats: true )
         
     }
+    
+    
+    func nextPage (sender:NSTimer){
+        
+        var image:UIImage! = UIImage(named: photos[0])
+        if count == 1{
+            imageView.image = image;
+            count += 1
+            
+        }else if count == 2{
+            image = UIImage(named: photos[1])
+            imageView.image = image
+            count += 1
+            
+            
+        }else if count == 3{
+            image = UIImage(named: photos[2])
+            imageView.image = image
+            count += 1
+        }else if count == 4{
+            image = UIImage(named: photos[3])
+            imageView.image = image
+            audioRecorder?.prepareToRecord()
+            audioRecorder?.record()
+            sender.invalidate()
+            
+        }
+        
+    }
+
+
+
+    
     
     
     func setupAudioRecorder() {
